@@ -4,18 +4,19 @@
 
 class Image;
 class MissileManager;
+/// <summary>
+/// 3종의 기체 중 에이스 기체의 정보를 담는 클래스.
+/// 주석은 Jong_Airplane 클래스와 동일.
+/// </summary>
 class Young_airplane : public Object
 {
 private:
 
-	//0529
 	int power; //Power Up을 할 변수
 	int missileAngle; // angle을 설정할 변수.
 	RECT skillRect;
 	int skillWidth, skillHeight;
 
-
-	//0527 변수 추가
 	int maxFrameX[4]{ 3, 1, 8, 6 };
 	PlayerState playerState;
 	int avoidGage;

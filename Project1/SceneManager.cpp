@@ -202,6 +202,7 @@ void SceneManager::Release()
 
 void SceneManager::Render(HDC hdc)
 {
+	// ¾À ÀüÈ¯
 	if (sceneNum == 0)
 	{
 		if (introImg)

@@ -6,25 +6,31 @@ class MissileManager;
 class Jong_airplane;
 class Sung_airplane;
 class Young_airplane;
+/// <summary>
+/// Player : 3종의 비행기를 컨트롤하는 플레이어 클래스.
+/// </summary>
 class Player : public Object
 {
 private:
-	int charNum;
-	bool move;
-	bool isDamaged;
-	int playerlife;
-	MissileManager* missileMgr;
+	int charNum;					// 비행기종 번호
+	bool move;						// 이동여부
+	bool isDamaged;					// 피격여부
+	int playerlife;					// 체력
+	MissileManager* missileMgr;		// 미사일 매니저
 
+	// 기체
 	Jong_airplane* jong;
 	Sung_airplane* sung;
 	Young_airplane* young;
-	PlayerState playerState;
-	
-	RECT skillRect;
-	bool skillOn;
 
-	FPOINT playerPos;
-	int playerGage;
+	PlayerState playerState;		// 플레이어 상태
+	
+	RECT skillRect;					// 스킬 판정 구간
+
+	bool skillOn;					// 스킬 사용 여부
+
+	FPOINT playerPos;				// 플레이어 위치
+	int playerGage;					// 회피 게이지
 
 
 public:

@@ -24,6 +24,7 @@ typedef struct tagFPOINT
 	float y;
 } FPOINT, *PFPOINT;
 
+// 플레이어 상태 정보
 enum class PlayerState
 {
 	IDLE,
@@ -32,16 +33,17 @@ enum class PlayerState
 	SKILL
 };
 
+// EliteEnemy 상태 정보
 enum class EliteEnemyState
 {
 	PATTERN1, // 일반 공격
-	PATTERN2, // 바람개비
+	PATTERN2, // 바람 개비
 	PATTERN3,
 	IDLE,
 	DIE
 };
 
-
+// BossEnemy 상태 정보
 enum class BossEnemyState
 {
 	IDLE,

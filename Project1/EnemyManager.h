@@ -8,6 +8,11 @@ class NormalEnemy_Choppa;
 class NormalEnemy_Wapol;
 class NormalEnemy_Franky;
 class ActionElement;
+
+/// <summary>
+/// EnemyManager : 오브젝트 풀링 패턴을 사용하여 NormalEnemy들을 관리하는 매니저 클래스.
+/// PaternManager클래스를 통하여 이동 패턴을 저장함.
+/// </summary>
 class EnemyManager : public GameNode
 {
 private:
@@ -57,18 +62,21 @@ private:
 	vector<ActionElement*> P5;
 	vector<ActionElement*> P7;
 	vector<ActionElement*> P9;
+	
 	// 시키 패턴
 	ActionElement* ae3;
 	ActionElement* ae6;
 
 	vector<ActionElement*> P3;
 	vector<ActionElement*> P6;
+	
 	// 티치 패턴
 	ActionElement* ae4;
 	ActionElement* ae8;
 
 	vector<ActionElement*> P4;
 	vector<ActionElement*> P8;
+	
 	// 프랑키 패턴
 	ActionElement* ae2;
 	ActionElement* ae7_2;
@@ -76,14 +84,14 @@ private:
 	vector<ActionElement*> P2;
 	vector<ActionElement*> P7_2;
 	float currFrame;
-	int EventCount = 10;
+	int EventCount = 10;							// 웨이브 수
 	float *EventTime = new float[EventCount];
 	int waveId;
-	int monsterCount[4] = { 10, 10, 10, 10 };
-	int waveMonsterCount[4] = {};
-	int monsterTypeCount;
+	int monsterCount[4] = { 10, 10, 10, 10 };		// 오브젝트 풀링 패턴에 저장되는 최대 몬스터 수
+	int waveMonsterCount[4] = {};					// 웨이브 당 필요한 몬스터 수
+	int monsterTypeCount;							// 몬스터의 타입 번호
 
-	int enemyNum[5] = {};
+	int enemyNum[5] = {};							// 웨이브 당 지연 생성을 위한 Enemy 그룹
 public:
 	virtual HRESULT Init();
 	virtual void Release();

@@ -3,56 +3,54 @@
 
 class Iamge;
 class MissileManager;
+/// <summary>
+/// EliteEnemy : 보스 전에 등장하는 준보스의 정보를 가지고 있는 클래스.
+/// BossEnemy 클래스 주석과 동일한 명의 변수나 함수는 설명을 생략.
+/// </summary>
 class EliteEnemy : public Enemy
 {
 protected:
 
-	//0601
 	int width, height;
 	RECT hitBox;
 	bool isHit;
 	int hitOnFrame;
-	bool patternFrameReset; //PatternFrame을 0으로 초기화 해주기 위한 변수
+	bool patternFrameReset;				// PatternFrame을 0으로 초기화 해주기 위한 변수
 	int pattern3Frame;
 	int dieFrame;
 	bool isDieCheck;
 
 
-	int patternDelay[3]{ 2, 1, 0 };
-	int patternCount[3]{ 4, 0, 0 }; ////////////
+	int patternDelay[3]{ 2, 1, 0 };		// 패턴 딜레이
+	int patternCount[3]{ 4, 0, 0 };		// 패턴 카운트
 	int nextPatternFrame;
 
-	bool isForwardRotate;
+	bool isForwardRotate;				// 역회전 스킬을 위한 bool 변수
 
-	int motionDelay;
-	bool isMotionDelay;
-	//int pattern3Count; //총알이 나오는 횟수
+	int motionDelay;					// 모션 딜레이
+	bool isMotionDelay;					// 딜레이 중인지 여부
 	bool pattern3On;
 	bool pattern3_OneChance;
 
-	//0527 변수 추가
 	int maxFrameX[4]{ 3, 2, 8, 3 };
-	//int patternFrame[3]{ 120,  };
-	//bool isCircle;
+
 
 
 
 	Image* img;
 	int elipsedTime;
 	bool isAppear;
-	int myState; //맥스 프레임 x의 인덱스를 담당할 변수
+	int myState;						// 맥스 프레임 x의 인덱스를 담당할 변수
 
 	float missileAngle;
 
 	MissileManager* enemyMissile;
-	EliteEnemyState eliteEnemyState;
+	EliteEnemyState eliteEnemyState;	// EliteEnemy 상태 정보
 
-	bool upState;
-	bool downState;
 	int frameRate;
 
-	int fireFrame;
-	int fireDelay;
+	int fireFrame;						// 패턴 미사일 발사 프레임
+	int fireDelay;						// 패턴 미사일 딜레이
 	int patternFrame;
 
 	float angle;

@@ -35,8 +35,6 @@ HRESULT EliteEnemy::Init()
 	life = 1000;
 	isAppear = true;
 	frameRate = 0;
-	upState = false;
-	downState = false;
 	angle = 180;
 	patternFrame = 0;
 	motionDelay = 0;
@@ -140,7 +138,6 @@ void EliteEnemy::Update()
 			{
 				frameRate = 0;
 				currFrameY = 1;
-				upState = true;
 				eliteEnemyState = EliteEnemyState::PATTERN1;
 			}
 		}

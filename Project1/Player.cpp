@@ -9,6 +9,7 @@ HRESULT Player::Init(int selectIdx)
 {
 	charNum = selectIdx;
 
+	// 비행기 번호에 따른 비행기체 선택 및 초기화
 	switch (charNum)
 	{
 	case 0:
@@ -35,6 +36,7 @@ HRESULT Player::Init(int selectIdx)
 		break;
 	}
 
+	// 기본 세팅 초기화
 	speed = 5.0f;
 	playerlife = 1;
 	radius = 0;

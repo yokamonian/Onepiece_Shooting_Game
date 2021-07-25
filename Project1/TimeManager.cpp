@@ -7,8 +7,6 @@ HRESULT TimeManager::Init()
 	timer = new Timer();
 	timer->Init();
 
-	testTime = 0.0f;
-	isTestStart = false;
 	return S_OK;
 }
 
@@ -23,10 +21,6 @@ void TimeManager::Update(float lockFPS)
 	{
 		timer->Tick(lockFPS);
 	}
-	if (isTestStart)
-	{
-		testTime += timer->GetDeltaTime();
-	}
 
 
 }
@@ -34,6 +28,7 @@ void TimeManager::Update(float lockFPS)
 void TimeManager::Render(HDC hdc)
 {
 #ifdef _DEBUG
+	// 프레임 및 월드타임 표기
 	if (timer)
 	{
 		SetBkMode(hdc, TRANSPARENT);

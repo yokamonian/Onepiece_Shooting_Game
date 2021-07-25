@@ -3,6 +3,9 @@
 
 class Image;
 class Battle;
+/// <summary>
+/// SceneManager : 씬 관리를 위한 매니저.
+/// </summary>
 class SceneManager : public GameNode
 {
 private:

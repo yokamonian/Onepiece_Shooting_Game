@@ -3,14 +3,15 @@
 #include "SingletonBase.h"
 
 class Timer;
+/// <summary>
+/// TimeManager : Time 클래스를 활용. 게임 내 각종 타이머 매니저 클래스.
+/// </summary>
 class TimeManager : public SingletonBase<TimeManager>
 {
 private:
-	Timer* timer;
-	char strText[256];
-	float testTime;
-	bool isTestStart;
-	bool isGameStart;
+	Timer* timer;			// 타이머
+	char strText[256];		
+	bool isGameStart;		// 게임시작 여부
 
 public:
 	virtual HRESULT Init();
@@ -23,7 +24,6 @@ public:
 	float GetCurrTime();
 
 	float GetDeltaTime();
-	void SetIsTestStart(bool b) { isTestStart = b; }
 	void SetIsGameStart(bool _isGameStart) { isGameStart = _isGameStart; }
 
 	void ResetWt();

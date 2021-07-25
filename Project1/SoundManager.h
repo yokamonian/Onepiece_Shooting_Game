@@ -12,6 +12,9 @@ using namespace FMOD;
 #define EXTRACHANNELBUFFER	5
 #define TOTALSOUNDBUFFER	SOUNDBUFFER + EXTRACHANNELBUFFER
 
+/// <summary>
+/// SoundManager : 인 게임 내 사운드를 관리하는 매니저 클래스.
+/// </summary>
 class SoundManager : public SingletonBase<SoundManager>
 {
 private:
@@ -25,11 +28,11 @@ public:
 	void Release();
 	void Update();
 
-	void AddSound(string key, string filePath, bool isBGM = false, bool isLoop = false);
-	void Play(string key, float volume = 1.0f); // 범위 0.0f~ 1.0f
-	void Stop(string key);
-	void Pause(string key);
-	void Resume(string key);
+	void AddSound(string key, string filePath, bool isBGM = false, bool isLoop = false);	// 사운드 추가
+	void Play(string key, float volume = 1.0f); // 범위 0.0f~ 1.0f							// 플레이
+	void Stop(string key);																	// 정지
+	void Pause(string key);																	// 일시정지
+	void Resume(string key);																// 일시정지해제
 
 	SoundManager();
 	~SoundManager();

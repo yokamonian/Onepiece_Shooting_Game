@@ -7,17 +7,11 @@ using namespace std;
 
 #define KEY_MAX_COUNT	256	
 
+/// <summary>
+/// KeyManager : 키 입력 관리 매니저 클래스
+/// </summary>
 class KeyManager : public SingletonBase<KeyManager>
 {
-	//protected:
-	//	static KeyManager* instance;
-	//
-	//	SingletonBase() {};
-	//	~SingletonBase() {};
-	//
-	//public:
-	//	static KeyManager* GetSingleton();	// instance를 외부에 노출
-	//	void ReleaseSingleton();	// 메모리 할당된 instance 해제
 private:
 	bitset<KEY_MAX_COUNT>	keyUp;
 	bitset<KEY_MAX_COUNT>	keyDown;
@@ -30,6 +24,7 @@ public:
 	bool IsOnceKeyUp(int key);		// 키를 눌렀다 뗐을 때
 	bool IsStayKeyDown(int key);	// 키를 누르고 있을 때
 
+	// 판정
 	bitset<KEY_MAX_COUNT> GetKeyUp() { return keyUp; }
 	bitset<KEY_MAX_COUNT> GetKeyDown() { return keyDown; }
 

@@ -1,6 +1,13 @@
 #pragma once
 #include "pch.h"
 
+/// <summary>
+/// Movement : 이동과 미사일 이동의 패턴 조합을 위한 이동 함수 모음.
+/// </summary>
+/// <param name="posX"></param>
+/// <param name="posY"></param>
+/// <param name="angle"></param>
+/// <param name="speed"></param>
 inline void N_anglemove(float *posX, float *posY, float angle, float speed)
 {
 	angle = -angle;

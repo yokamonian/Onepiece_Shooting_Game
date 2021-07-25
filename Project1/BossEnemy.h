@@ -2,33 +2,33 @@
 #include "Enemy.h"
 
 class MissileManager;
+/// <summary>
+/// BossEnemy : 보스 개체의 정보를 가지고 있는 클래스.
+/// </summary>
 class BossEnemy : public Enemy
 {
 protected:
 
-	//0601
-	int width, height;
-	RECT hitBox;
-	bool isHit;
-	int hitOnFrame;
-	int frameRate;
-	bool isPattern3;
-	int pattern2Frame;
-	int dieFrame;
+	int width, height;							// 너비, 높이
+	RECT hitBox;								// 히트 박스
+	bool isHit;									// 피격 여부
+	int hitOnFrame;								// 다단히트 처리 방지를 위한 카운트
+	int frameRate;								// 프레임
+	int patternFrame;							// 패턴 프레임
+	int pattern2Frame;							// 패턴 프레임2
+	int dieFrame;								// 사망 프레임 수
 
-	int patternFrame;
-	bool pattern2On;
+	bool pattern2On;							// 2페이즈 시작 여부
 	float angle;
 
 
 	bool isDieCheck;
-	//bool isCurrZero;
-	bool isPattern2;
-	bool isCurrZero;
+	bool isPattern2;							// 보스 패턴 여부
+	bool isPattern3;								
+	bool isCurrZero;							// 패턴 전환을 위한 bool 변수
 
 	Image* aceImage;
 	bool isAppear;
-	//int sleepCount;
 	bool isSleep;
 	int randAngle;
 

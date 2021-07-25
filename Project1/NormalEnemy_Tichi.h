@@ -3,6 +3,10 @@
 
 class Image;
 class MissileManager;
+/// <summary>
+/// 기본 적군 기체 티치의 정보를 담는 클래스.
+/// NormalEnemy_Choppa와 대부분의 주석은 동일.
+/// </summary>
 class NormalEnemy_Tichi : public NormalEnemy
 {
 private:

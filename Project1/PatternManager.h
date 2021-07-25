@@ -3,6 +3,9 @@
 #include "SingletonBase.h"
 #include "ActionElement.h"
 
+/// <summary>
+/// PatternManager : 미사일이나 이동 시 패턴을 저장하기 위한 매니저.
+/// </summary>
 class PatternManager : public SingletonBase<PatternManager>
 {
 private:

@@ -12,11 +12,13 @@ HRESULT MainGame::Init()
 	backBuffer = new Image();
 	backBuffer->Init(WINSIZE_X, WINSIZE_Y);
 
+	// 각종 매니저 초기화
 	KeyManager::GetSingleton()->Init();
 	ImageMgr::GetSingleton()->Init();
 	TimeManager::GetSingleton()->Init();
 	SoundManager::GetSingleton()->Init();
 
+	// 사운드 추가
 	SoundManager::GetSingleton()->AddSound("open", "Sound/opening.mp3", true, true);
 	SoundManager::GetSingleton()->AddSound("BG", "Sound/bg.mp3", true, true);
 	SoundManager::GetSingleton()->AddSound("aceopen", "Sound/aceopen.mp3", true, true);
@@ -91,6 +93,7 @@ LRESULT MainGame::MainProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lPara
 	HDC hdc;
 	PAINTSTRUCT ps;
 
+	// iMessage
 	switch (iMessage)
 	{
 

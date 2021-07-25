@@ -3,14 +3,18 @@
 
 class Image;
 class MissileManager;
+/// <summary>
+/// 기본 적군 기체 시키의 정보를 담는 클래스.
+/// NormalEnemy_Choppa와 대부분의 주석은 동일.
+/// </summary>
 class NormalEnemy_Shiki : public NormalEnemy
 {
 private:
 
-	float angle;	//플레이어의 위치를 받을 변수.
+	float angle;
 	FPOINT playerPos;
 	int maxFrameX[3]{ 1, 3, 2 };
-	int myState; //0이면 기본 상태, 1이면 플레이어를 무는 상태, 2이면 죽는 모션
+	int myState;
 
 
 	Image* img;

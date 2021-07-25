@@ -4,6 +4,10 @@
 
 class Image;
 class MissileManager;
+/// <summary>
+/// 3종의 기체 중 아카이누 기체의 정보를 담는 클래스.
+/// 주석은 Jong_Airplane 클래스와 동일.
+/// </summary>
 class Sung_airplane : public Object
 {
 private:
@@ -14,7 +18,6 @@ private:
 
 	bool isGameStartPosition;
 
-	//0527 변수 추가
 	int maxFrameX[4]{ 3, 1, 5, 1 };
 	PlayerState playerState;
 	int avoidGage;

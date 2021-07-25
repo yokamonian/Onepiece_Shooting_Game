@@ -1,6 +1,9 @@
 #pragma once
 #include "pch.h"
 
+/// <summary>
+/// ActionElement : 패턴 저장 데이터 변수들의 집합 클래스.
+/// </summary>
 class ActionElement
 {
 public :

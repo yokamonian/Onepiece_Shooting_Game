@@ -16,8 +16,6 @@ HRESULT Battle::Init(int selectIdx)
 {
 	instance = this;
 	backgroundImg1 = ImageMgr::GetSingleton()->AddImage("backgroundImg1", "Image/onepiecebg2.bmp", WINSIZE_X, WINSIZE_Y);
-	//backgroundImg1 = ImageMgr::GetSingleton()->AddImage("backgroundImg1", "Image/Background.bmp", WINSIZE_X, WINSIZE_Y);
-	//backgroundImg2 = ImageMgr::GetSingleton()->AddImage("backgroundImg2", "Image/Background2.bmp", 10000, WINSIZE_Y, true, RGB(255, 255, 255));
 	blankHP = ImageMgr::GetSingleton()->AddImage("BlankHP", "Image/blankHP.bmp", 306, 46);
 	fillHP = ImageMgr::GetSingleton()->AddImage("FillHP", "Image/FillHP.bmp", 300, 40);
 	eliteBlankHP = ImageMgr::GetSingleton()->AddImage("bossBlankHp", "Image/bossBlankHp.bmp", 1005, 45, true, RGB(255,255,255));
@@ -205,7 +203,7 @@ void Battle::Render(HDC hdc)
 
 
 
-	//eliteHP
+	// eliteHP
 	if ( (eliteEnemy->GetIsAppear() == true) && (eliteEnemy->GetPos().x <= WINSIZE_X / 2 + 400))
 	{
 		if (eliteBlankHP)
@@ -218,7 +216,7 @@ void Battle::Render(HDC hdc)
 			eliteFillHP->GageRender(hdc, 104, 32, eliteEnemy->GetLife());
 		}
 
-	}//bossHP
+	}// bossHP
 	else if ((bossEnemy->GetLife() > 0) && (eliteEnemy->GetLife() <= 0) && (bossEnemy->GetposX() <= WINSIZE_X / 2 + 400))
 	{
 		if (bossBlankHP)
@@ -233,7 +231,7 @@ void Battle::Render(HDC hdc)
 	}
 
 
-	//PlayerGage
+	// PlayerGage
 	if (blankHP)
 	{
 		blankHP->Render(hdc, 50, 800);/* 여기에 hp바 값 구현. */

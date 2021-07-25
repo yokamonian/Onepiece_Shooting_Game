@@ -38,6 +38,7 @@ void Timer::Tick(float lockFPS)
 	}
 	timeElapsed = (currTime - lastTime) * timeScale;
 
+	// 프레임 제한
 	if (lockFPS > 0.0f)
 	{
 		while (timeElapsed < (1.0f / lockFPS))
@@ -54,12 +55,14 @@ void Timer::Tick(float lockFPS)
 		}
 	}
 
+	// 월드 타임 계산
 	if(isGameStart)
 		worldTime += timeElapsed;
 
 	FPSFrameCount++;
 	FPSTimeElapsed += timeElapsed;
 
+	// 초당 프레임 계산
 	if (FPSTimeElapsed > 1.0f)
 	{
 		frameRate = FPSFrameCount;
