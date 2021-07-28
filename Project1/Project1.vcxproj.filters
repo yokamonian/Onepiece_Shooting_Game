@@ -45,217 +45,217 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameNode.cpp">
-      <Filter>2dFrameWork</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="MainGame.cpp">
-      <Filter>MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="KeyManager.cpp">
+    <ClCompile Include="Src\ImageMgr.cpp">
       <Filter>2dFrameWork\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="ImageMgr.cpp">
+    <ClCompile Include="Src\KeyManager.cpp">
       <Filter>2dFrameWork\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Image.cpp">
+    <ClCompile Include="Src\PatternManager.cpp">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SoundManager.cpp">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TimeManager.cpp">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Image.cpp">
       <Filter>2dFrameWork</Filter>
     </ClCompile>
-    <ClCompile Include="Timer.cpp">
+    <ClCompile Include="Src\Timer.cpp">
       <Filter>2dFrameWork\Timer</Filter>
     </ClCompile>
-    <ClCompile Include="TimeManager.cpp">
-      <Filter>2dFrameWork\Manager</Filter>
+    <ClCompile Include="Src\GameNode.cpp">
+      <Filter>2dFrameWork</Filter>
     </ClCompile>
-    <ClCompile Include="SoundManager.cpp">
-      <Filter>2dFrameWork\Manager</Filter>
+    <ClCompile Include="Src\MainGame.cpp">
+      <Filter>MainGame</Filter>
     </ClCompile>
-    <ClCompile Include="Object.cpp">
+    <ClCompile Include="Src\Jong_airplane.cpp">
+      <Filter>Object\airplane</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Player.cpp">
+      <Filter>Object\airplane</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Sung_airplane.cpp">
+      <Filter>Object\airplane</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Young_airplane.cpp">
+      <Filter>Object\airplane</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy_Choppa.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy_Franky.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy_Shiki.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy_Tichi.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NormalEnemy_Wapol.cpp">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BossEnemy.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EliteEnemy.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EliteEnemyMissile.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EnemyManager.cpp">
+      <Filter>Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\EnemyMissile.cpp">
+      <Filter>Object\missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Missile.cpp">
+      <Filter>Object\missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MissileManager.cpp">
+      <Filter>Object\missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PlayerMissile.cpp">
+      <Filter>Object\missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PowerUp.cpp">
+      <Filter>Object\missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="Jong_airplane.cpp">
-      <Filter>Object\airplane</Filter>
-    </ClCompile>
-    <ClCompile Include="Young_airplane.cpp">
-      <Filter>Object\airplane</Filter>
-    </ClCompile>
-    <ClCompile Include="Missile.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="Sung_airplane.cpp">
-      <Filter>Object\airplane</Filter>
-    </ClCompile>
-    <ClCompile Include="MissileManager.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
+    <ClCompile Include="Src\Battle.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Battle.cpp">
+    <ClCompile Include="Src\SceneManager.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="NormalEnemy.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EliteEnemy.cpp">
-      <Filter>Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="BossEnemy.cpp">
-      <Filter>Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="NormalEnemy_Wapol.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyManager.cpp">
-      <Filter>Object\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyMissile.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerMissile.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Object\airplane</Filter>
-    </ClCompile>
-    <ClCompile Include="EliteEnemyMissile.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="NormalEnemy_Choppa.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="NormalEnemy_Shiki.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="NormalEnemy_Tichi.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="PowerUp.cpp">
-      <Filter>Object\missile</Filter>
-    </ClCompile>
-    <ClCompile Include="PatternManager.cpp">
-      <Filter>2dFrameWork\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="NormalEnemy_Franky.cpp">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Src\ImageMgr.h">
+      <Filter>2dFrameWork\Manager</Filter>
     </ClInclude>
-    <ClInclude Include="GameNode.h">
+    <ClInclude Include="Src\KeyManager.h">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PatternManager.h">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SingletonBase.h">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SoundManager.h">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TimeManager.h">
+      <Filter>2dFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Image.h">
       <Filter>2dFrameWork</Filter>
     </ClInclude>
-    <ClInclude Include="macroFunction.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="MainGame.h">
-      <Filter>MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="SingletonBase.h">
-      <Filter>2dFrameWork\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyManager.h">
-      <Filter>2dFrameWork\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="ImageMgr.h">
-      <Filter>2dFrameWork\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Image.h">
-      <Filter>2dFrameWork</Filter>
-    </ClInclude>
-    <ClInclude Include="Timer.h">
+    <ClInclude Include="Src\Timer.h">
       <Filter>2dFrameWork\Timer</Filter>
     </ClInclude>
-    <ClInclude Include="TimeManager.h">
-      <Filter>2dFrameWork\Manager</Filter>
+    <ClInclude Include="Src\GameNode.h">
+      <Filter>2dFrameWork</Filter>
     </ClInclude>
-    <ClInclude Include="SoundManager.h">
-      <Filter>2dFrameWork\Manager</Filter>
+    <ClInclude Include="Src\MainGame.h">
+      <Filter>MainGame</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
+    <ClInclude Include="Src\Jong_airplane.h">
+      <Filter>Object\airplane</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Player.h">
+      <Filter>Object\airplane</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sung_airplane.h">
+      <Filter>Object\airplane</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Young_airplane.h">
+      <Filter>Object\airplane</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy_Choppa.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy_Franky.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy_Shiki.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy_Tichi.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\NormalEnemy_Wapol.h">
+      <Filter>Object\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\BossEnemy.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\EliteEnemy.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\EliteEnemyMissile.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\EnemyManager.h">
+      <Filter>Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\EnemyMissile.h">
+      <Filter>Object\missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Missile.h">
+      <Filter>Object\missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MissileManager.h">
+      <Filter>Object\missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PlayerMissile.h">
+      <Filter>Object\missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\PowerUp.h">
+      <Filter>Object\missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object.h">
       <Filter>Object</Filter>
     </ClInclude>
-    <ClInclude Include="Jong_airplane.h">
-      <Filter>Object\airplane</Filter>
-    </ClInclude>
-    <ClInclude Include="Young_airplane.h">
-      <Filter>Object\airplane</Filter>
-    </ClInclude>
-    <ClInclude Include="Missile.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="MissileManager.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
+    <ClInclude Include="Src\Battle.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Battle.h">
+    <ClInclude Include="Src\SceneManager.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="NormalEnemy.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EliteEnemy.h">
-      <Filter>Object\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="BossEnemy.h">
-      <Filter>Object\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Object\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="NormalEnemy_Wapol.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyManager.h">
-      <Filter>Object\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyMissile.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerMissile.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Object\airplane</Filter>
-    </ClInclude>
-    <ClInclude Include="EliteEnemyMissile.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="Movement.h">
+    <ClInclude Include="Src\ActionElement.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="NormalEnemy_Choppa.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="NormalEnemy_Shiki.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="NormalEnemy_Tichi.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Sung_airplane.h">
-      <Filter>Object\airplane</Filter>
-    </ClInclude>
-    <ClInclude Include="PowerUp.h">
-      <Filter>Object\missile</Filter>
-    </ClInclude>
-    <ClInclude Include="PatternManager.h">
-      <Filter>2dFrameWork\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="ActionElement.h">
+    <ClInclude Include="Src\macroFunction.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="NormalEnemy_Franky.h">
-      <Filter>Object\Enemy\NormalEnemy</Filter>
+    <ClInclude Include="Src\Movement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\pch.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
