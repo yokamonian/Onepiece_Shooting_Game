@@ -30,7 +30,7 @@
  + 시스템 디자인(UML)
  ![Onepiece](https://user-images.githubusercontent.com/63716789/129311736-03fcf063-f347-4262-be90-f637ad1f4794.png)
  + 중요코드
-   + 오브젝트 풀(ObjectPool) 패턴
+   + 오브젝트 풀링(ObjectPooling) 패턴
      <p align="center"><img src="https://user-images.githubusercontent.com/63716789/134845047-0f7a115d-43f5-4214-a329-8d451a33e7fa.JPG"></p>
      
      + 위 사진은 게임 시작 시 발사에 필요한 미사일들을 벡터에 넣어두는 코드입니다.
